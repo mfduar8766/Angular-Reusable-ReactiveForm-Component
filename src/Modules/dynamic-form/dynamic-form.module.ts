@@ -11,11 +11,13 @@ import { FormDatePickerComponent } from 'src/app/Components/form-date-picker/for
 import { FormCheckboxComponent } from 'src/app/Components/form-checkbox/form-checkbox.component';
 import { FormRadioComponent } from 'src/app/Components/form-radio/form-radio.component';
 import { FormMultiSelectComponent } from 'src/app/Components/form-multi-select/form-multi-select.component';
+import { FormSliderComponent } from 'src/app/Components/form-slider/form-slider.component';
 
 // PrimeNG Modules
 import { MultiSelectModule } from 'primeng/multiselect';
 import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
+import { SliderModule } from 'primeng/slider';
 
 @NgModule({
   imports: [
@@ -25,7 +27,8 @@ import { DropdownModule } from 'primeng/dropdown';
     FormsModule,
     MultiSelectModule,
     CalendarModule,
-    DropdownModule
+    DropdownModule,
+    SliderModule
   ],
   declarations: [
     DynamicFieldDirective,
@@ -37,6 +40,7 @@ import { DropdownModule } from 'primeng/dropdown';
     FormCheckboxComponent,
     FormRadioComponent,
     FormMultiSelectComponent,
+    FormSliderComponent
   ],
   exports: [DynamicFormComponent],
   entryComponents: [
@@ -47,6 +51,7 @@ import { DropdownModule } from 'primeng/dropdown';
     FormCheckboxComponent,
     FormRadioComponent,
     FormMultiSelectComponent,
+    FormSliderComponent
   ],
 })
 export class DynamicFormModule { }

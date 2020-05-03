@@ -11,7 +11,6 @@ import { FieldConfig } from 'src/Models/fieldConfig.interface';
 @Component({
   exportAs: 'dynamicForm',
   selector: 'app-dynamic-form',
-  styleUrls: ['dynamic-form.component.sass'],
   template: `
     <form
       class="dynamic-form"

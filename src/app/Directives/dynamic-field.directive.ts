@@ -18,6 +18,7 @@ import { FormDatePickerComponent } from '../Components/form-date-picker/form-dat
 import { FormCheckboxComponent } from '../Components/form-checkbox/form-checkbox.component';
 import { FormRadioComponent } from '../Components/form-radio/form-radio.component';
 import { FormMultiSelectComponent } from '../Components/form-multi-select/form-multi-select.component';
+import { FormSliderComponent } from '../Components/form-slider/form-slider.component';
 
 const components: { [type: string]: Type<Field> } = {
   button: FormButtonComponent,
@@ -27,6 +28,7 @@ const components: { [type: string]: Type<Field> } = {
   radiobutton: FormRadioComponent,
   checkbox: FormCheckboxComponent,
   multiSelect: FormMultiSelectComponent,
+  slider: FormSliderComponent
 };
 
 @Directive({
